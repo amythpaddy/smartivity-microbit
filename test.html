@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css"/>
+        <script src="blockly/blockly_compressed.js"></script>
+        <script src="blockly/blocks_compressed.js"></script>
+        <script src="blockly/microbit_compressed.js"></script>
+        <script src="blockly/msg/js/en.js"></script>
+    </head>
+    <body>
+        <script>
+                Blockly.Blocks['string_length'] = {
+                init: function() {
+                this.appendValueInput('VALUE')
+                    .setCheck('String')
+                    .appendField('length of');
+                this.setOutput(true, 'Number');
+                this.setColour(160);
+                this.setTooltip('Returns number of letters in the provided text.');
+                this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
+              }
+            };
+        </script>
+        <xml id="toolbox" style="display: none">
+                <block type="string_length"></block>
+          <block type="controls_if"></block>
+          <block type="controls_repeat_ext"></block>
+          <block type="logic_compare"></block>
+          <block type="math_number"></block>
+          <block type="math_arithmetic"></block>
+          <block type="text"></block>
+          <block type="text_print"></block>
+          
+
+        </xml>
+        <div id="result"><textarea id='code'></textarea>
+        <button onClick="update()">ClickMe</button></div>
+        <div id="blocklyArea"/>
+        <div id="blocklyDiv" />
+        
+        
+        <script>
+            var workspace = Blockly.inject('blocklyArea',
+                {toolbox: document.getElementById('toolbox')},
+                                           {css:false});
+      
+            var blocklyArea = document.getElementById('blocklyArea');
+            var blocklyDiv = document.getElementById('blocklyDiv');
+            
+            var onresize = function(e) {
+                // Compute the absolute coordinates and dimensions of blocklyArea.
+            var element = blocklyArea;
+            var x = 0;
+            var y = 0;
+            do {
+                x += element.offsetLeft;
+                y += element.offsetTop;
+                element = element.offsetParent;
+            } while (element);
+            // Position blocklyDiv over blocklyArea.
+            blocklyDiv.style.left = x + 'px';
+            blocklyDiv.style.top = y + 'px';
+            blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
+            blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
+            Blockly.svgResize(workspace);
+          };
+  
+            onresize();
+            Blockly.svgResize(workspace);
+            
+            function myUpdateFunction(event) {
+                var code = Blockly.Microbit.workspaceToCode(workspace);         
+                document.getElementById('code').value = code;
+                console.log("code");
+            }
+            function update() {
+                var code = Blockly.Microbit.workspaceToCode(workspace);
+                document.getElementById('code').value = code;
+                console.log("code");
+            }
+            workspace.addChangeListener(myUpdateFunction);
+        </script>   
+    </body>
+</html>

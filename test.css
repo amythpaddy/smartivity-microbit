@@ -1,0 +1,31 @@
+
+#blocklyArea {
+    resize: both;
+  overflow: auto;
+    height: auto;
+    width: auto;
+    background-color: antiquewhite
+}
+
+#blocklyDiv {
+    position: absolute;
+}
+
+#result {
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  background-color: aqua;
+    z-index: 999;
+    width: auto;
+  background-color: antiquewhite
+}
+
+#code {
+    width: 1000;
+    height: 100;
+}

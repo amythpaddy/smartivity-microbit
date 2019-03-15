@@ -28,24 +28,35 @@ goog.provide('Blockly.Microbit.custom');
 goog.require('Blockly.Microbit');
 
 
-Blockly.JavaScript['smd_logic'] = function(block) {
-    // If/elseif/else condition.
-    var n = 0;
-    var code = '', branchCode, conditionCode;
-    do {
-      conditionCode = Blockly.JavaScript.valueToCode(block, 'IF' + n,
-        Blockly.JavaScript.ORDER_NONE) || 'false';
-      branchCode = Blockly.JavaScript.statementToCode(block, 'DO' + n);
-      code += (n > 0 ? ' else ' : '') +
-          'if (' + conditionCode + ') {\n' + branchCode + '}';
+Blockly.Microbit['smd_logic'] = function(block) {
+  // If/elseif/else condition.
+  var n = 0;
+  var code = '', branchCode, conditionCode;
+  do {
+    conditionCode = Blockly.Microbit.valueToCode(block, 'IF' + n,
+      Blockly.Microbit.ORDER_NONE) || 'false';
+    branchCode = Blockly.Microbit.statementToCode(block, 'DO' + n);
+    code += (n > 0 ? ' else ' : '') +
+        'if (' + conditionCode + ') {\n' + branchCode + '}';
+
+    ++n;
+  } while (block.getInput('IF' + n));
+
+  if (block.getInput('ELSE')) {
+    branchCode = Blockly.Microbit.statementToCode(block, 'ELSE');
+    code += ' else {\n' + branchCode + '}';
+  }
+  return code + '\n';
+};
+
+Blockly.Microbit['string_length'] = function(block) {
+  // String or array length.
   
-      ++n;
-    } while (block.getInput('IF' + n));
+  return "Test 1";
+};
+
+Blockly.Microbit['text_print'] = function(block) {
+  // String or array length.
   
-    if (block.getInput('ELSE')) {
-      branchCode = Blockly.JavaScript.statementToCode(block, 'ELSE');
-      code += ' else {\n' + branchCode + '}';
-    }
-    return code + '\n';
-  };
-  
+  return "Just checking if this code works";
+};

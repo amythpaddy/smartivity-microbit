@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37121D1522534CCA0073549B /* CodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D0C22534CCA0073549B /* CodeManager.swift */; };
+		37121D1622534CCA0073549B /* MusicMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D0D22534CCA0073549B /* MusicMakerViewController.swift */; };
+		37121D1722534CCA0073549B /* ButtonEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D0E22534CCA0073549B /* ButtonEditorViewController.swift */; };
+		37121D1822534CCA0073549B /* CodeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D0F22534CCA0073549B /* CodeRunner.swift */; };
+		37121D1922534CCA0073549B /* MusicMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D1022534CCA0073549B /* MusicMaker.swift */; };
+		37121D1B22534CCA0073549B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D1322534CCA0073549B /* AudioPlayer.swift */; };
+		37121D1C22534CCA0073549B /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37121D1422534CCA0073549B /* FileHelper.swift */; };
+		37121D3E22534F7D0073549B /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37121D3122534F5F0073549B /* AEXML.framework */; };
+		37121D3F22534F7D0073549B /* AEXML.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37121D3122534F5F0073549B /* AEXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37121D4222534F7D0073549B /* Blockly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37121D2322534F4D0073549B /* Blockly.framework */; };
+		37121D4322534F7D0073549B /* Blockly.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37121D2322534F4D0073549B /* Blockly.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37121D61225350BD0073549B /* en.js in Resources */ = {isa = PBXBuildFile; fileRef = 37121D4C225350BC0073549B /* en.js */; };
+		37121D64225350BD0073549B /* sound_block_generators.js in Resources */ = {isa = PBXBuildFile; fileRef = 37121D4F225350BC0073549B /* sound_block_generators.js */; };
+		37121D65225350BD0073549B /* toolbox.xml in Resources */ = {isa = PBXBuildFile; fileRef = 37121D50225350BC0073549B /* toolbox.xml */; };
+		37121D66225350BD0073549B /* a5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D52225350BD0073549B /* a5.m4a */; };
+		37121D67225350BD0073549B /* g4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D53225350BD0073549B /* g4.m4a */; };
+		37121D68225350BD0073549B /* f4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D54225350BD0073549B /* f4.m4a */; };
+		37121D69225350BD0073549B /* whistle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37121D55225350BD0073549B /* whistle.wav */; };
+		37121D6A225350BD0073549B /* yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 37121D56225350BD0073549B /* yeah.mp3 */; };
+		37121D6B225350BD0073549B /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37121D57225350BD0073549B /* fart.wav */; };
+		37121D6C225350BD0073549B /* e4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D58225350BD0073549B /* e4.m4a */; };
+		37121D6D225350BD0073549B /* horn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37121D59225350BD0073549B /* horn.wav */; };
+		37121D6E225350BD0073549B /* d4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D5A225350BD0073549B /* d4.m4a */; };
+		37121D6F225350BD0073549B /* c4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D5B225350BD0073549B /* c4.m4a */; };
+		37121D70225350BD0073549B /* c5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D5C225350BD0073549B /* c5.m4a */; };
+		37121D71225350BD0073549B /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 37121D5D225350BD0073549B /* success.wav */; };
+		37121D72225350BD0073549B /* b5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 37121D5E225350BD0073549B /* b5.m4a */; };
+		37121D73225350BD0073549B /* sound_blocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 37121D5F225350BD0073549B /* sound_blocks.json */; };
 		371AD0A32251ED8E008C726D /* MicrobitPinIOController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0952251ED8E008C726D /* MicrobitPinIOController.swift */; };
 		371AD0A42251ED8E008C726D /* MicrobitUARTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0962251ED8E008C726D /* MicrobitUARTController.swift */; };
 		371AD0A52251ED8E008C726D /* MicrobitUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0972251ED8E008C726D /* MicrobitUI.swift */; };
@@ -21,16 +49,141 @@
 		371AD0AE2251ED8E008C726D /* MicrobitButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0A02251ED8E008C726D /* MicrobitButtonsController.swift */; };
 		371AD0AF2251ED8E008C726D /* Microbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0A12251ED8E008C726D /* Microbit.swift */; };
 		371AD0B02251ED8E008C726D /* MicrobitBeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0A22251ED8E008C726D /* MicrobitBeaconController.swift */; };
+		37E8D3052253524900024DBC /* microbit_compressed.js in Resources */ = {isa = PBXBuildFile; fileRef = 37E8D3042253524900024DBC /* microbit_compressed.js */; };
+		37E8D3092253692700024DBC /* custom_blocks.json in Resources */ = {isa = PBXBuildFile; fileRef = 37E8D3082253692700024DBC /* custom_blocks.json */; };
+		37E8D30B2253695700024DBC /* custom_block_generators.js in Resources */ = {isa = PBXBuildFile; fileRef = 37E8D30A2253695700024DBC /* custom_block_generators.js */; };
+		37EF827B22536ED200D092F5 /* javascript_compressed.js in Resources */ = {isa = PBXBuildFile; fileRef = 37EF827922536ED200D092F5 /* javascript_compressed.js */; };
+		37EF827C22536ED200D092F5 /* blockly_compressed.js in Resources */ = {isa = PBXBuildFile; fileRef = 37EF827A22536ED200D092F5 /* blockly_compressed.js */; };
 		AB036C55211B89D600CCC9D8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB036C54211B89D600CCC9D8 /* WebKit.framework */; };
 		AB980111211A37B50025AFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB980110211A37B50025AFF2 /* AppDelegate.swift */; };
 		AB980113211A37B50025AFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB980112211A37B50025AFF2 /* ViewController.swift */; };
 		AB980116211A37B50025AFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB980114211A37B50025AFF2 /* Main.storyboard */; };
 		AB980118211A37B70025AFF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB980117211A37B70025AFF2 /* Assets.xcassets */; };
 		AB98011B211A37B70025AFF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB980119211A37B70025AFF2 /* LaunchScreen.storyboard */; };
-		ABA1B7FC212214E7000D3CC5 /* Blockly in Resources */ = {isa = PBXBuildFile; fileRef = ABA1B7FB212214E7000D3CC5 /* Blockly */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		37121D2222534F4D0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D1D22534F4D0073549B /* Blockly.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA548C051B630BAC008BC59C;
+			remoteInfo = Blockly;
+		};
+		37121D2422534F4D0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D1D22534F4D0073549B /* Blockly.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA548C101B630BAD008BC59C;
+			remoteInfo = BlocklyTests;
+		};
+		37121D3022534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92791BDD47210011F36F;
+			remoteInfo = "AEXML iOS";
+		};
+		37121D3222534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92DF1BDD5D330011F36F;
+			remoteInfo = "AEXML watchOS";
+		};
+		37121D3422534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92991BDD4CEF0011F36F;
+			remoteInfo = "AEXML iOS Tests";
+		};
+		37121D3622534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92BE1BDD5B300011F36F;
+			remoteInfo = "AEXML tvOS";
+		};
+		37121D3822534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92CC1BDD5BB20011F36F;
+			remoteInfo = "AEXML tvOS Tests";
+		};
+		37121D3A22534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A928A1BDD49390011F36F;
+			remoteInfo = "AEXML OSX";
+		};
+		37121D3C22534F5F0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92AB1BDD54F50011F36F;
+			remoteInfo = "AEXML OSX Tests";
+		};
+		37121D4022534F7D0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4A92781BDD47210011F36F;
+			remoteInfo = "AEXML iOS";
+		};
+		37121D4422534F7D0073549B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37121D1D22534F4D0073549B /* Blockly.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA548C041B630BAC008BC59C;
+			remoteInfo = Blockly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37121D4622534F7E0073549B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37121D3F22534F7D0073549B /* AEXML.framework in Embed Frameworks */,
+				37121D4322534F7D0073549B /* Blockly.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		37121D0C22534CCA0073549B /* CodeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeManager.swift; sourceTree = "<group>"; };
+		37121D0D22534CCA0073549B /* MusicMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMakerViewController.swift; sourceTree = "<group>"; };
+		37121D0E22534CCA0073549B /* ButtonEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonEditorViewController.swift; sourceTree = "<group>"; };
+		37121D0F22534CCA0073549B /* CodeRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeRunner.swift; sourceTree = "<group>"; };
+		37121D1022534CCA0073549B /* MusicMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMaker.swift; sourceTree = "<group>"; };
+		37121D1322534CCA0073549B /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		37121D1422534CCA0073549B /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		37121D1D22534F4D0073549B /* Blockly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blockly.xcodeproj; path = Blockly/Blockly.xcodeproj; sourceTree = SOURCE_ROOT; };
+		37121D2622534F5E0073549B /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = Blockly/third_party/Carthage/Checkouts/AEXML/AEXML.xcodeproj; sourceTree = SOURCE_ROOT; };
+		37121D4C225350BC0073549B /* en.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = en.js; sourceTree = "<group>"; };
+		37121D4F225350BC0073549B /* sound_block_generators.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sound_block_generators.js; sourceTree = "<group>"; };
+		37121D50225350BC0073549B /* toolbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = toolbox.xml; sourceTree = "<group>"; };
+		37121D52225350BD0073549B /* a5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = a5.m4a; sourceTree = "<group>"; };
+		37121D53225350BD0073549B /* g4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = g4.m4a; sourceTree = "<group>"; };
+		37121D54225350BD0073549B /* f4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = f4.m4a; sourceTree = "<group>"; };
+		37121D55225350BD0073549B /* whistle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whistle.wav; sourceTree = "<group>"; };
+		37121D56225350BD0073549B /* yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yeah.mp3; sourceTree = "<group>"; };
+		37121D57225350BD0073549B /* fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart.wav; sourceTree = "<group>"; };
+		37121D58225350BD0073549B /* e4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = e4.m4a; sourceTree = "<group>"; };
+		37121D59225350BD0073549B /* horn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horn.wav; sourceTree = "<group>"; };
+		37121D5A225350BD0073549B /* d4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = d4.m4a; sourceTree = "<group>"; };
+		37121D5B225350BD0073549B /* c4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = c4.m4a; sourceTree = "<group>"; };
+		37121D5C225350BD0073549B /* c5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = c5.m4a; sourceTree = "<group>"; };
+		37121D5D225350BD0073549B /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+		37121D5E225350BD0073549B /* b5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = b5.m4a; sourceTree = "<group>"; };
+		37121D5F225350BD0073549B /* sound_blocks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sound_blocks.json; sourceTree = "<group>"; };
 		371AD0952251ED8E008C726D /* MicrobitPinIOController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitPinIOController.swift; sourceTree = "<group>"; };
 		371AD0962251ED8E008C726D /* MicrobitUARTController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitUARTController.swift; sourceTree = "<group>"; };
 		371AD0972251ED8E008C726D /* MicrobitUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitUI.swift; sourceTree = "<group>"; };
@@ -45,6 +198,11 @@
 		371AD0A02251ED8E008C726D /* MicrobitButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitButtonsController.swift; sourceTree = "<group>"; };
 		371AD0A12251ED8E008C726D /* Microbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Microbit.swift; sourceTree = "<group>"; };
 		371AD0A22251ED8E008C726D /* MicrobitBeaconController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitBeaconController.swift; sourceTree = "<group>"; };
+		37E8D3042253524900024DBC /* microbit_compressed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = microbit_compressed.js; sourceTree = "<group>"; };
+		37E8D3082253692700024DBC /* custom_blocks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = custom_blocks.json; sourceTree = "<group>"; };
+		37E8D30A2253695700024DBC /* custom_block_generators.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = custom_block_generators.js; sourceTree = "<group>"; };
+		37EF827922536ED200D092F5 /* javascript_compressed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = javascript_compressed.js; sourceTree = "<group>"; };
+		37EF827A22536ED200D092F5 /* blockly_compressed.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = blockly_compressed.js; sourceTree = "<group>"; };
 		AB036C54211B89D600CCC9D8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AB98010D211A37B50025AFF2 /* Blockly WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blockly WebView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB980110211A37B50025AFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +211,6 @@
 		AB980117211A37B70025AFF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB98011A211A37B70025AFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB98011C211A37B70025AFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABA1B7FB212214E7000D3CC5 /* Blockly */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Blockly; path = "Resources/Non-Localized/Blockly"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +218,127 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37121D3E22534F7D0073549B /* AEXML.framework in Frameworks */,
 				AB036C55211B89D600CCC9D8 /* WebKit.framework in Frameworks */,
+				37121D4222534F7D0073549B /* Blockly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37121D0B22534CCA0073549B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				37121D0C22534CCA0073549B /* CodeManager.swift */,
+				37121D0F22534CCA0073549B /* CodeRunner.swift */,
+				37121D1022534CCA0073549B /* MusicMaker.swift */,
+				37121D1222534CCA0073549B /* Helpers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		37121D1222534CCA0073549B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37121D1322534CCA0073549B /* AudioPlayer.swift */,
+				37121D1422534CCA0073549B /* FileHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		37121D1E22534F4D0073549B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37121D2322534F4D0073549B /* Blockly.framework */,
+				37121D2522534F4D0073549B /* BlocklyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37121D2722534F5E0073549B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37121D3122534F5F0073549B /* AEXML.framework */,
+				37121D3322534F5F0073549B /* AEXML.framework */,
+				37121D3522534F5F0073549B /* AEXML iOS Tests.xctest */,
+				37121D3722534F5F0073549B /* AEXML.framework */,
+				37121D3922534F5F0073549B /* AEXML tvOS Tests.xctest */,
+				37121D3B22534F5F0073549B /* AEXML.framework */,
+				37121D3D22534F5F0073549B /* AEXML OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37121D47225350BC0073549B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37121D48225350BC0073549B /* Non-Localized */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		37121D48225350BC0073549B /* Non-Localized */ = {
+			isa = PBXGroup;
+			children = (
+				37121D49225350BC0073549B /* blockly_web */,
+				37121D4F225350BC0073549B /* sound_block_generators.js */,
+				37121D5F225350BD0073549B /* sound_blocks.json */,
+				37121D50225350BC0073549B /* toolbox.xml */,
+				37121D51225350BC0073549B /* Sounds */,
+				37E8D3082253692700024DBC /* custom_blocks.json */,
+				37E8D30A2253695700024DBC /* custom_block_generators.js */,
+			);
+			path = "Non-Localized";
+			sourceTree = "<group>";
+		};
+		37121D49225350BC0073549B /* blockly_web */ = {
+			isa = PBXGroup;
+			children = (
+				37121D4A225350BC0073549B /* msg */,
+				37E8D3042253524900024DBC /* microbit_compressed.js */,
+				37EF827A22536ED200D092F5 /* blockly_compressed.js */,
+				37EF827922536ED200D092F5 /* javascript_compressed.js */,
+			);
+			path = blockly_web;
+			sourceTree = "<group>";
+		};
+		37121D4A225350BC0073549B /* msg */ = {
+			isa = PBXGroup;
+			children = (
+				37121D4B225350BC0073549B /* js */,
+			);
+			path = msg;
+			sourceTree = "<group>";
+		};
+		37121D4B225350BC0073549B /* js */ = {
+			isa = PBXGroup;
+			children = (
+				37121D4C225350BC0073549B /* en.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		37121D51225350BC0073549B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				37121D52225350BD0073549B /* a5.m4a */,
+				37121D53225350BD0073549B /* g4.m4a */,
+				37121D54225350BD0073549B /* f4.m4a */,
+				37121D55225350BD0073549B /* whistle.wav */,
+				37121D56225350BD0073549B /* yeah.mp3 */,
+				37121D57225350BD0073549B /* fart.wav */,
+				37121D58225350BD0073549B /* e4.m4a */,
+				37121D59225350BD0073549B /* horn.wav */,
+				37121D5A225350BD0073549B /* d4.m4a */,
+				37121D5B225350BD0073549B /* c4.m4a */,
+				37121D5C225350BD0073549B /* c5.m4a */,
+				37121D5D225350BD0073549B /* success.wav */,
+				37121D5E225350BD0073549B /* b5.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		371AD0942251ED8E008C726D /* Microbit */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,32 +388,21 @@
 		AB98010F211A37B50025AFF2 /* Blockly WebView */ = {
 			isa = PBXGroup;
 			children = (
+				37121D2622534F5E0073549B /* AEXML.xcodeproj */,
+				37121D1D22534F4D0073549B /* Blockly.xcodeproj */,
+				37121D0B22534CCA0073549B /* Sources */,
 				371AD0942251ED8E008C726D /* Microbit */,
-				ABA1B7F9212214B9000D3CC5 /* Resources */,
 				AB980110211A37B50025AFF2 /* AppDelegate.swift */,
 				AB980112211A37B50025AFF2 /* ViewController.swift */,
+				37121D0D22534CCA0073549B /* MusicMakerViewController.swift */,
+				37121D0E22534CCA0073549B /* ButtonEditorViewController.swift */,
 				AB980114211A37B50025AFF2 /* Main.storyboard */,
 				AB980117211A37B70025AFF2 /* Assets.xcassets */,
 				AB980119211A37B70025AFF2 /* LaunchScreen.storyboard */,
 				AB98011C211A37B70025AFF2 /* Info.plist */,
+				37121D47225350BC0073549B /* Resources */,
 			);
 			path = "Blockly WebView";
-			sourceTree = "<group>";
-		};
-		ABA1B7F9212214B9000D3CC5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				ABA1B7FA212214C6000D3CC5 /* Non-Localized */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		ABA1B7FA212214C6000D3CC5 /* Non-Localized */ = {
-			isa = PBXGroup;
-			children = (
-				ABA1B7FB212214E7000D3CC5 /* Blockly */,
-			);
-			path = "Non-Localized";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +416,13 @@
 				AB98010A211A37B50025AFF2 /* Frameworks */,
 				ABEDABD1212372E700A66667 /* ShellScript */,
 				AB98010B211A37B50025AFF2 /* Resources */,
+				37121D4622534F7E0073549B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37121D4122534F7D0073549B /* PBXTargetDependency */,
+				37121D4522534F7D0073549B /* PBXTargetDependency */,
 			);
 			name = "Blockly WebView";
 			productName = "Blockly WebView";
@@ -192,6 +455,16 @@
 			mainGroup = AB980104211A37B50025AFF2;
 			productRefGroup = AB98010E211A37B50025AFF2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 37121D2722534F5E0073549B /* Products */;
+					ProjectRef = 37121D2622534F5E0073549B /* AEXML.xcodeproj */;
+				},
+				{
+					ProductGroup = 37121D1E22534F4D0073549B /* Products */;
+					ProjectRef = 37121D1D22534F4D0073549B /* Blockly.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AB98010C211A37B50025AFF2 /* Blockly WebView */,
@@ -199,16 +472,103 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		37121D2322534F4D0073549B /* Blockly.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Blockly.framework;
+			remoteRef = 37121D2222534F4D0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D2522534F4D0073549B /* BlocklyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BlocklyTests.xctest;
+			remoteRef = 37121D2422534F4D0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3122534F5F0073549B /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 37121D3022534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3322534F5F0073549B /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 37121D3222534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3522534F5F0073549B /* AEXML iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AEXML iOS Tests.xctest";
+			remoteRef = 37121D3422534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3722534F5F0073549B /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 37121D3622534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3922534F5F0073549B /* AEXML tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AEXML tvOS Tests.xctest";
+			remoteRef = 37121D3822534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3B22534F5F0073549B /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 37121D3A22534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37121D3D22534F5F0073549B /* AEXML OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AEXML OSX Tests.xctest";
+			remoteRef = 37121D3C22534F5F0073549B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		AB98010B211A37B50025AFF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EF827C22536ED200D092F5 /* blockly_compressed.js in Resources */,
+				37121D6B225350BD0073549B /* fart.wav in Resources */,
+				37EF827B22536ED200D092F5 /* javascript_compressed.js in Resources */,
+				37121D66225350BD0073549B /* a5.m4a in Resources */,
+				37121D6F225350BD0073549B /* c4.m4a in Resources */,
+				37121D64225350BD0073549B /* sound_block_generators.js in Resources */,
 				371AD0A72251ED8E008C726D /* microbit-Untitled.hex in Resources */,
+				37121D72225350BD0073549B /* b5.m4a in Resources */,
+				37121D67225350BD0073549B /* g4.m4a in Resources */,
+				37E8D3092253692700024DBC /* custom_blocks.json in Resources */,
+				37121D61225350BD0073549B /* en.js in Resources */,
 				AB98011B211A37B70025AFF2 /* LaunchScreen.storyboard in Resources */,
 				AB980118211A37B70025AFF2 /* Assets.xcassets in Resources */,
+				37121D71225350BD0073549B /* success.wav in Resources */,
+				37121D70225350BD0073549B /* c5.m4a in Resources */,
+				37121D69225350BD0073549B /* whistle.wav in Resources */,
+				37121D68225350BD0073549B /* f4.m4a in Resources */,
+				37121D6E225350BD0073549B /* d4.m4a in Resources */,
+				37121D73225350BD0073549B /* sound_blocks.json in Resources */,
+				37121D6A225350BD0073549B /* yeah.mp3 in Resources */,
+				37121D65225350BD0073549B /* toolbox.xml in Resources */,
 				AB980116211A37B50025AFF2 /* Main.storyboard in Resources */,
-				ABA1B7FC212214E7000D3CC5 /* Blockly in Resources */,
+				37121D6D225350BD0073549B /* horn.wav in Resources */,
+				37E8D3052253524900024DBC /* microbit_compressed.js in Resources */,
+				37121D6C225350BD0073549B /* e4.m4a in Resources */,
+				37E8D30B2253695700024DBC /* custom_block_generators.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +597,9 @@
 			files = (
 				371AD0B02251ED8E008C726D /* MicrobitBeaconController.swift in Sources */,
 				371AD0A42251ED8E008C726D /* MicrobitUARTController.swift in Sources */,
+				37121D1522534CCA0073549B /* CodeManager.swift in Sources */,
 				371AD0AC2251ED8E008C726D /* MicrobitLEDController.swift in Sources */,
+				37121D1622534CCA0073549B /* MusicMakerViewController.swift in Sources */,
 				371AD0A62251ED8E008C726D /* MicrobitEventsController.swift in Sources */,
 				AB980113211A37B50025AFF2 /* ViewController.swift in Sources */,
 				AB980111211A37B50025AFF2 /* AppDelegate.swift in Sources */,
@@ -245,15 +607,33 @@
 				371AD0A92251ED8E008C726D /* MicrobitMagnetometerController.swift in Sources */,
 				371AD0A52251ED8E008C726D /* MicrobitUI.swift in Sources */,
 				371AD0A82251ED8E008C726D /* MicrobitTemperatureController.swift in Sources */,
+				37121D1922534CCA0073549B /* MusicMaker.swift in Sources */,
+				37121D1B22534CCA0073549B /* AudioPlayer.swift in Sources */,
 				371AD0A32251ED8E008C726D /* MicrobitPinIOController.swift in Sources */,
 				371AD0AF2251ED8E008C726D /* Microbit.swift in Sources */,
+				37121D1822534CCA0073549B /* CodeRunner.swift in Sources */,
 				371AD0AD2251ED8E008C726D /* MicrobitUIDelegate.swift in Sources */,
 				371AD0AA2251ED8E008C726D /* MicrobitAccelerometerController.swift in Sources */,
+				37121D1C22534CCA0073549B /* FileHelper.swift in Sources */,
+				37121D1722534CCA0073549B /* ButtonEditorViewController.swift in Sources */,
 				371AD0AB2251ED8E008C726D /* MicrobitLogController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37121D4122534F7D0073549B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AEXML iOS";
+			targetProxy = 37121D4022534F7D0073549B /* PBXContainerItemProxy */;
+		};
+		37121D4522534F7D0073549B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Blockly;
+			targetProxy = 37121D4422534F7D0073549B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB980114211A37B50025AFF2 /* Main.storyboard */ = {
@@ -392,6 +772,7 @@
 		AB980120211A37B70025AFF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S96Z7J39V;
@@ -411,6 +792,7 @@
 		AB980121211A37B70025AFF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S96Z7J39V;

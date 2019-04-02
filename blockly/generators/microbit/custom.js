@@ -51,13 +51,13 @@ Blockly.Microbit['smd_logic'] = function(block) {
 
 Blockly.Microbit['string_length'] = function(block) {
   // String or array length.
-  
+
   return "Test 1";
 };
 
 Blockly.Microbit['text_print'] = function(block) {
   // String or array length.
-  
+
   return "Just checking if this code works";
 };
 
@@ -66,41 +66,33 @@ Blockly.Microbit['show_msg'] = function(block) {
   Blockly.Microbit.set_msg(text_name);
   return [code, Blockly.Microbit.ORDER_NONE];
   };
-  
+
 Blockly.Microbit['press_a'] = function(block) {
 var value_name = Blockly.Microbit.valueToCode(block, 'NAME', Blockly.Microbit.ORDER_ATOMIC);
 Blockly.Microbit.button_a_pressed();
 var code = 'uBit.messageBus.listen(MICROBIT_ID_BUTTON_A, MICROBIT_EVT_ANY, onButton);\n';
 return code;
 };
+Blockly.JavaScript['tempo1'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
 
-Blockly.Microbit['sad_start'] = function(block) {
-  // String or array length.
-  
-  return "a ";
+Blockly.JavaScript['tempo2'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
 };
-Blockly.Microbit['rotate'] = function(block) {
-  // String or array length.
-  
-  return "b ";
+
+Blockly.JavaScript['tempo3'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
 };
-Blockly.Microbit['top'] = function(block) {
-  // String or array length.
-  
-  return "c ";
-};
-Blockly.Microbit['bottom'] = function(block) {
-  // String or array length.
-  
-  return "d ";
-};
-Blockly.Microbit['left'] = function(block) {
-  // String or array length.
-  
-  return "e ";
-};
-Blockly.Microbit['motor'] = function(block) {
-  // String or array length.
-  
-  return "f ";
+
+Blockly.JavaScript['start'] = function(block) {
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
 };

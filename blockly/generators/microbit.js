@@ -124,29 +124,31 @@ Blockly.Microbit.finish = function(code) {
   // Indent every line.
   code = '  ' + code.replace(/\n/g, '\n  ');
   code = code.replace(/\n\s+$/, '\n');
-  code = 'int main() \n{\n\nuBit.init()\n' + code + '\nrelease_fiber();\n}';
+  // code = 'int main() \n{\n\nuBit.init()\n' + code + '\nrelease_fiber();\n}';
 
-  // Convert the definitions dictionary into a list.
-  var imports = [];
-  var definitions = [];
-  for (var name in Blockly.Microbit.definitions_) {
-    var def = Blockly.Microbit.definitions_[name];
-    if (def.match(/^#include/)) {
-      imports.push(def);
-    } else {
-      definitions.push(def);
-    }
-  }
+  // // Convert the definitions dictionary into a list.
+  // var imports = [];
+  // var definitions = [];
+  // for (var name in Blockly.Microbit.definitions_) {
+  //   var def = Blockly.Microbit.definitions_[name];
+  //   if (def.match(/^#include/)) {
+  //     imports.push(def);
+  //   } else {
+  //     definitions.push(def);
+  //   }
+  // }
 
-  // Convert the setups dictionary into a list.
-  var setups = [];
-  for (var name in Blockly.Microbit.setups_) {
-    setups.push(Blockly.Microbit.setups_[name]);
-  }
+  // // Convert the setups dictionary into a list.
+  // var setups = [];
+  // for (var name in Blockly.Microbit.setups_) {
+  //   setups.push(Blockly.Microbit.setups_[name]);
+  // }
 
-  // var allDefs = imports.join('\n') + '\n\n' + definitions.join('\n') + '\n#include \"Microbit.h\" \n\nMicrobit uBit; \n  '+setups.join('\n  ') + '\n}'+ '\n\n';
-  var allDefs = imports.join('\n') + '\n\n' + definitions.join('\n') + '#include \"Microbit.h\" \n\nMicrobit uBit; \n\n';
-  return allDefs.replace(/\n\n+/g, '\n\n').replace(/\n*$/, '\n\n\n') + code;
+  // // var allDefs = imports.join('\n') + '\n\n' + definitions.join('\n') + '\n#include \"Microbit.h\" \n\nMicrobit uBit; \n  '+setups.join('\n  ') + '\n}'+ '\n\n';
+  // var allDefs = imports.join('\n') + '\n\n' + definitions.join('\n') + '#include \"Microbit.h\" \n\nMicrobit uBit; \n\n';
+  // return allDefs.replace(/\n\n+/g, '\n\n').replace(/\n*$/, '\n\n\n') + code;
+
+  return code;
 };
 
 /**

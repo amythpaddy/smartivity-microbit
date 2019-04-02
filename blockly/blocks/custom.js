@@ -42,25 +42,125 @@ goog.require('Blockly');
  */
 Blockly.Constants.Colour.HUE = 20;
 
-Blockly.Blocks['string_length'] = {
-    init: function() {
-      this.appendValueInput('VALUE')
-          .setCheck('String')
-          .appendField('length of');
-      this.setOutput(true, 'Number');
-      this.setColour(160);
-      this.setTooltip('Returns number of letters in the provided text.');
-      this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
-    }
-  };
+Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
 
-  Blockly.Blocks['string_numberz'] = {
-    init: function() {
-      this.appendValueInput('VALUE')
-          .appendField('number of');
-      this.setOutput(true, 'Number');
-      this.setColour(160);
-      this.setTooltip('Returns number of letters in the provided text.');
-      this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
-    }
-  };
+
+
+  {
+    "type": "sad_start",
+    "message0": "%1 Start",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "https://www.viper.com/images/icon-remote-start.png",
+        "width": 50,
+        "height": 50,
+        "alt": "*",
+        "flipRtl": false
+      }
+    ],
+    "inputsInline": false,
+    "nextStatement": null,
+    "colour": 230,
+    "tooltip": null,
+    "helpUrl": null
+  },
+  
+  
+  
+  {
+    "type": "rotate",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "https://requestreduce.org/images/arrow-cycle-clipart-black-and-white-2.jpg",
+        "width": 50,
+        "height": 50,
+        "alt": "*",
+        "flipRtl": true
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 105,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "top",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow6-up-512.png",
+        "width": 50,
+        "height": 50,
+        "alt": "*",
+        "flipRtl": true
+      }
+    ],
+    "previousStatement": null,
+    "colour": 105,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "bottom",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "https://cdn3.iconfinder.com/data/icons/arrows-76/16/arrow-down-01-512.png",
+        "width": 50,
+        "height": 50,
+        "alt": "*",
+        "flipRtl": true
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 105,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "left",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "https://www.pngrepo.com/download/166596/black-left-arrows.png",
+        "width": 50,
+        "height": 50,
+        "alt": "*",
+        "flipRtl": true
+      }
+    ],
+    "output": null,
+    "colour": 105,
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "motor",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "https://cl.ly/c9057cb142b1/download/index.dual-gear-loading-icon.gif",
+        "width": 50,
+        "height": 50,
+        "alt": "*",
+        "flipRtl": true
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": 105,
+    "tooltip": "",
+    "helpUrl": ""
+  }
+  
+  ]);  // END JSON EXTRACT (Do not delete this comment.)
+  

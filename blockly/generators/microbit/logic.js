@@ -67,7 +67,7 @@ Blockly.Microbit.logic_compare.OPERATORS = {
   LTE: '<=',
   GT: '>',
   GTE: '>='
-};
+};                                                                                                                                                                                                                                                                                      
 
 Blockly.Microbit.logic_operation = function() {
   // Operations 'and', 'or'.

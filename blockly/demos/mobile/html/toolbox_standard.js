@@ -329,5 +329,14 @@ BLOCKLY_TOOLBOX_XML['standard'] =
 + '<sep></sep>'
 + '<category name="Variables" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE"></category>'
 + '<category name="Functions" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE"></category>'
++ '<sep></sep>'
++ '<category name="Custom Blocks" colour="109" iconclass="blocklyTreeIconCustom custom">'
++   '<block type="sad_start"></block>'
++   '<block type="rotate"></block>'
++   '<block type="top"></block>'
++   '<block type="bottom"></block>'
++   '<block type="left"></block>'
++   '<block type="motor"></block>'
++   '</category>'
 + '</xml>';
 /* END BLOCKLY_TOOLBOX_XML ASSIGNMENT. DO NOT EDIT. */

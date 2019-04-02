@@ -53,7 +53,7 @@ Blockly.Blocks['string_length'] = {
       this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
     }
   };
-  
+
   Blockly.Blocks['string_numberz'] = {
     init: function() {
       this.appendValueInput('VALUE')
@@ -64,6 +64,3 @@ Blockly.Blocks['string_length'] = {
       this.setHelpUrl('http://www.w3schools.com/jsref/jsref_length_string.asp');
     }
   };
-
-  
-  

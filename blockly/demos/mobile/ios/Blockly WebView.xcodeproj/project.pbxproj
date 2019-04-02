@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371AD0A32251ED8E008C726D /* MicrobitPinIOController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0952251ED8E008C726D /* MicrobitPinIOController.swift */; };
+		371AD0A42251ED8E008C726D /* MicrobitUARTController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0962251ED8E008C726D /* MicrobitUARTController.swift */; };
+		371AD0A52251ED8E008C726D /* MicrobitUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0972251ED8E008C726D /* MicrobitUI.swift */; };
+		371AD0A62251ED8E008C726D /* MicrobitEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0982251ED8E008C726D /* MicrobitEventsController.swift */; };
+		371AD0A72251ED8E008C726D /* microbit-Untitled.hex in Resources */ = {isa = PBXBuildFile; fileRef = 371AD0992251ED8E008C726D /* microbit-Untitled.hex */; };
+		371AD0A82251ED8E008C726D /* MicrobitTemperatureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD09A2251ED8E008C726D /* MicrobitTemperatureController.swift */; };
+		371AD0A92251ED8E008C726D /* MicrobitMagnetometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD09B2251ED8E008C726D /* MicrobitMagnetometerController.swift */; };
+		371AD0AA2251ED8E008C726D /* MicrobitAccelerometerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD09C2251ED8E008C726D /* MicrobitAccelerometerController.swift */; };
+		371AD0AB2251ED8E008C726D /* MicrobitLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD09D2251ED8E008C726D /* MicrobitLogController.swift */; };
+		371AD0AC2251ED8E008C726D /* MicrobitLEDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD09E2251ED8E008C726D /* MicrobitLEDController.swift */; };
+		371AD0AD2251ED8E008C726D /* MicrobitUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD09F2251ED8E008C726D /* MicrobitUIDelegate.swift */; };
+		371AD0AE2251ED8E008C726D /* MicrobitButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0A02251ED8E008C726D /* MicrobitButtonsController.swift */; };
+		371AD0AF2251ED8E008C726D /* Microbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0A12251ED8E008C726D /* Microbit.swift */; };
+		371AD0B02251ED8E008C726D /* MicrobitBeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371AD0A22251ED8E008C726D /* MicrobitBeaconController.swift */; };
 		AB036C55211B89D600CCC9D8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB036C54211B89D600CCC9D8 /* WebKit.framework */; };
 		AB980111211A37B50025AFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB980110211A37B50025AFF2 /* AppDelegate.swift */; };
 		AB980113211A37B50025AFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB980112211A37B50025AFF2 /* ViewController.swift */; };
@@ -17,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		371AD0952251ED8E008C726D /* MicrobitPinIOController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitPinIOController.swift; sourceTree = "<group>"; };
+		371AD0962251ED8E008C726D /* MicrobitUARTController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitUARTController.swift; sourceTree = "<group>"; };
+		371AD0972251ED8E008C726D /* MicrobitUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitUI.swift; sourceTree = "<group>"; };
+		371AD0982251ED8E008C726D /* MicrobitEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitEventsController.swift; sourceTree = "<group>"; };
+		371AD0992251ED8E008C726D /* microbit-Untitled.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "microbit-Untitled.hex"; sourceTree = "<group>"; };
+		371AD09A2251ED8E008C726D /* MicrobitTemperatureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitTemperatureController.swift; sourceTree = "<group>"; };
+		371AD09B2251ED8E008C726D /* MicrobitMagnetometerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitMagnetometerController.swift; sourceTree = "<group>"; };
+		371AD09C2251ED8E008C726D /* MicrobitAccelerometerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitAccelerometerController.swift; sourceTree = "<group>"; };
+		371AD09D2251ED8E008C726D /* MicrobitLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitLogController.swift; sourceTree = "<group>"; };
+		371AD09E2251ED8E008C726D /* MicrobitLEDController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitLEDController.swift; sourceTree = "<group>"; };
+		371AD09F2251ED8E008C726D /* MicrobitUIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitUIDelegate.swift; sourceTree = "<group>"; };
+		371AD0A02251ED8E008C726D /* MicrobitButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitButtonsController.swift; sourceTree = "<group>"; };
+		371AD0A12251ED8E008C726D /* Microbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Microbit.swift; sourceTree = "<group>"; };
+		371AD0A22251ED8E008C726D /* MicrobitBeaconController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrobitBeaconController.swift; sourceTree = "<group>"; };
 		AB036C54211B89D600CCC9D8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AB98010D211A37B50025AFF2 /* Blockly WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blockly WebView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB980110211A37B50025AFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +68,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371AD0942251ED8E008C726D /* Microbit */ = {
+			isa = PBXGroup;
+			children = (
+				371AD0952251ED8E008C726D /* MicrobitPinIOController.swift */,
+				371AD0962251ED8E008C726D /* MicrobitUARTController.swift */,
+				371AD0972251ED8E008C726D /* MicrobitUI.swift */,
+				371AD0982251ED8E008C726D /* MicrobitEventsController.swift */,
+				371AD0992251ED8E008C726D /* microbit-Untitled.hex */,
+				371AD09A2251ED8E008C726D /* MicrobitTemperatureController.swift */,
+				371AD09B2251ED8E008C726D /* MicrobitMagnetometerController.swift */,
+				371AD09C2251ED8E008C726D /* MicrobitAccelerometerController.swift */,
+				371AD09D2251ED8E008C726D /* MicrobitLogController.swift */,
+				371AD09E2251ED8E008C726D /* MicrobitLEDController.swift */,
+				371AD09F2251ED8E008C726D /* MicrobitUIDelegate.swift */,
+				371AD0A02251ED8E008C726D /* MicrobitButtonsController.swift */,
+				371AD0A12251ED8E008C726D /* Microbit.swift */,
+				371AD0A22251ED8E008C726D /* MicrobitBeaconController.swift */,
+			);
+			path = Microbit;
+			sourceTree = "<group>";
+		};
 		AB036C53211B89D500CCC9D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +117,7 @@
 		AB98010F211A37B50025AFF2 /* Blockly WebView */ = {
 			isa = PBXGroup;
 			children = (
+				371AD0942251ED8E008C726D /* Microbit */,
 				ABA1B7F9212214B9000D3CC5 /* Resources */,
 				AB980110211A37B50025AFF2 /* AppDelegate.swift */,
 				AB980112211A37B50025AFF2 /* ViewController.swift */,
@@ -154,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371AD0A72251ED8E008C726D /* microbit-Untitled.hex in Resources */,
 				AB98011B211A37B70025AFF2 /* LaunchScreen.storyboard in Resources */,
 				AB980118211A37B70025AFF2 /* Assets.xcassets in Resources */,
 				AB980116211A37B50025AFF2 /* Main.storyboard in Resources */,
@@ -184,8 +235,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371AD0B02251ED8E008C726D /* MicrobitBeaconController.swift in Sources */,
+				371AD0A42251ED8E008C726D /* MicrobitUARTController.swift in Sources */,
+				371AD0AC2251ED8E008C726D /* MicrobitLEDController.swift in Sources */,
+				371AD0A62251ED8E008C726D /* MicrobitEventsController.swift in Sources */,
 				AB980113211A37B50025AFF2 /* ViewController.swift in Sources */,
 				AB980111211A37B50025AFF2 /* AppDelegate.swift in Sources */,
+				371AD0AE2251ED8E008C726D /* MicrobitButtonsController.swift in Sources */,
+				371AD0A92251ED8E008C726D /* MicrobitMagnetometerController.swift in Sources */,
+				371AD0A52251ED8E008C726D /* MicrobitUI.swift in Sources */,
+				371AD0A82251ED8E008C726D /* MicrobitTemperatureController.swift in Sources */,
+				371AD0A32251ED8E008C726D /* MicrobitPinIOController.swift in Sources */,
+				371AD0AF2251ED8E008C726D /* Microbit.swift in Sources */,
+				371AD0AD2251ED8E008C726D /* MicrobitUIDelegate.swift in Sources */,
+				371AD0AA2251ED8E008C726D /* MicrobitAccelerometerController.swift in Sources */,
+				371AD0AB2251ED8E008C726D /* MicrobitLogController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3KZF7Q7Q49;
+				DEVELOPMENT_TEAM = 6S96Z7J39V;
 				INFOPLIST_FILE = "Blockly WebView/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3KZF7Q7Q49;
+				DEVELOPMENT_TEAM = 6S96Z7J39V;
 				INFOPLIST_FILE = "Blockly WebView/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

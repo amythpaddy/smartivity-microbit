@@ -24,6 +24,14 @@ class ViewController: UIViewController, WKUIDelegate {
         webView.uiDelegate = self
         // Do any additional setup after loading the view, typically from a nib.
         loadWebContent()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .done, target: self, action: #selector(handleMicrobit))
+    }
+    
+    @objc func handleMicrobit(){
+        let vc = MicrobitUARTController()
+        vc.microbit = Microbit("BBC micro:bit [pupav]")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     /// Load the root HTML page into the webview.

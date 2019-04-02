@@ -27,72 +27,26 @@ goog.provide('Blockly.Microbit.custom');
 
 goog.require('Blockly.Microbit');
 
-
-Blockly.Microbit['smd_logic'] = function(block) {
-  // If/elseif/else condition.
-  var n = 0;
-  var code = '', branchCode, conditionCode;
-  do {
-    conditionCode = Blockly.Microbit.valueToCode(block, 'IF' + n,
-      Blockly.Microbit.ORDER_NONE) || 'false';
-    branchCode = Blockly.Microbit.statementToCode(block, 'DO' + n);
-    code += (n > 0 ? ' else ' : '') +
-        'if (' + conditionCode + ') {\n' + branchCode + '}';
-
-    ++n;
-  } while (block.getInput('IF' + n));
-
-  if (block.getInput('ELSE')) {
-    branchCode = Blockly.Microbit.statementToCode(block, 'ELSE');
-    code += ' else {\n' + branchCode + '}';
-  }
-  return code + '\n';
-};
-
-Blockly.Microbit['string_length'] = function(block) {
-  // String or array length.
-
-  return "Test 1";
-};
-
-Blockly.Microbit['text_print'] = function(block) {
-  // String or array length.
-
-  return "Just checking if this code works";
-};
-
-Blockly.Microbit['show_msg'] = function(block) {
-  var text_name = block.getFieldValue('NAME');
-  Blockly.Microbit.set_msg(text_name);
-  return [code, Blockly.Microbit.ORDER_NONE];
-  };
-
-Blockly.Microbit['press_a'] = function(block) {
-var value_name = Blockly.Microbit.valueToCode(block, 'NAME', Blockly.Microbit.ORDER_ATOMIC);
-Blockly.Microbit.button_a_pressed();
-var code = 'uBit.messageBus.listen(MICROBIT_ID_BUTTON_A, MICROBIT_EVT_ANY, onButton);\n';
-return code;
-};
-Blockly.JavaScript['tempo1'] = function(block) {
+Blockly.Microbit['tempo1'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = 'az#';
   return code;
 };
 
-Blockly.JavaScript['tempo2'] = function(block) {
+Blockly.Microbit['tempo2'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = 'bz#';
   return code;
 };
 
-Blockly.JavaScript['tempo3'] = function(block) {
+Blockly.Microbit['tempo3'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = 'cz#';
   return code;
 };
 
-Blockly.JavaScript['start'] = function(block) {
+Blockly.Microbit['start'] = function(block) {
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = '';
   return code;
 };

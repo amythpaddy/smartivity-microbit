@@ -416,6 +416,10 @@ Blockly.Generator.prototype.finish = function(code) {
   return code;
 };
 
+Blockly.Generator.prototype.add_header = function(code){
+  return code;
+}
+
 /**
  * Naked values are top-level blocks with outputs that aren't plugged into
  * anything.

@@ -21,7 +21,8 @@
             };
         </script>
         <xml id="toolbox" style="display: none">
-                <block type="string_length"></block>
+            <block type="press_a"></block>
+            <block type="show_msg"></block>
                 <block type="controls_if"></block>
                 <block type="string_length"></block>
                 <block type="string_numberz"></block>
@@ -71,7 +72,7 @@
                 console.log("code");
             }
             function update() {
-                var code = Blockly.Microbit.workspaceToCode(workspace);
+                var code = Blockly.Microbit.add_header(workspace);
                 document.getElementById('code').value = code;
                 console.log("code");
             }

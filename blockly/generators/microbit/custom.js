@@ -60,3 +60,16 @@ Blockly.Microbit['text_print'] = function(block) {
   
   return "Just checking if this code works";
 };
+
+Blockly.Microbit['show_msg'] = function(block) {
+  var text_name = block.getFieldValue('NAME');
+  Blockly.Microbit.set_msg(text_name);
+  return [code, Blockly.Microbit.ORDER_NONE];
+  };
+  
+Blockly.Microbit['press_a'] = function(block) {
+var value_name = Blockly.Microbit.valueToCode(block, 'NAME', Blockly.Microbit.ORDER_ATOMIC);
+Blockly.Microbit.button_a_pressed();
+var code = 'uBit.messageBus.listen(MICROBIT_ID_BUTTON_A, MICROBIT_EVT_ANY, onButton);\n';
+return code;
+};
